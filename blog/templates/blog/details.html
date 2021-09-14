@@ -1,0 +1,10 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h2>{{object.title}}</h2>
+<p>{{object.author}} | {{post.date_posted|date:'M d, Y'}}</p>
+<p>{{object.description}}</p>
+{% endblock content %}
+
+
+<!--#we always loop over object while using class based views unless we changed it manually from views-->
