@@ -5,6 +5,6 @@ from.views import PostDetailView
 app_name = 'blog'
 
 urlpatterns = [
-    path('', views.blog, name='blog'),
+    path('', views.blog, name='blog-home'),
     path('<int:pk>/', PostDetailView.as_view(), name='blog-details'),
 ]
