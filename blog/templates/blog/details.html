@@ -3,7 +3,7 @@
 {% block content %}
 <h2>{{object.title}}</h2>
 <p>{{object.author}} | {{post.date_posted|date:'M d, Y'}}</p>
-<p>{{object.description}}</p>
+<p>{{object.description|safe}}</p>
 {% endblock content %}
 
 
