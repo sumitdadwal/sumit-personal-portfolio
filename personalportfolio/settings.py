@@ -133,7 +133,7 @@ try:
 except:
     print("Looks like no local file. You must be in production")
 
-
+LOGIN_REDIRECT_URL = 'port-home'
 
 
 # Default primary key field type
